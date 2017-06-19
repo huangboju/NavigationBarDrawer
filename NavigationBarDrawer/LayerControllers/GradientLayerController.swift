@@ -28,6 +28,7 @@ class GradientLayerController: UIViewController {
         button.setTitle("立即变现", for: .normal)
         button.setTitle("立即变现", for: .highlighted)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
+        button.highlightedBackgroundColor = UIColor(white: 1, alpha: 0.3)
         view.addSubview(button)
 
         generateButton()
@@ -67,10 +68,72 @@ extension UIColor {
 }
 
 class GradientButton: UIButton {
+    private var highlightedBackgroundLayer = CALayer()
+    private var originBorderColor: UIColor?
+    var highlightedBackgroundColor: UIColor?
+    var adjustsButtonWhenHighlighted = true
+
+    var highlightedBorderColor: UIColor? {
+        didSet {
+            if highlightedBorderColor != nil {
+                // 只要开启了highlightedBorderColor，就默认不需要alpha的高亮
+                adjustsButtonWhenHighlighted = false
+            }
+        }
+    }
+
     override class var layerClass: AnyClass {
         return CAGradientLayer.self
     }
-    
+
+    override var isHighlighted: Bool {
+        didSet {
+            if isHighlighted && originBorderColor == nil {
+                // 手指按在按钮上会不断触发setHighlighted:，所以这里做了保护，设置过一次就不用再设置了
+                self.originBorderColor = UIColor(cgColor: self.layer.borderColor!)
+            }
+            // 渲染背景色
+            if highlightedBackgroundColor != nil || highlightedBorderColor != nil {
+                adjustsButtonHighlighted()
+            }
+
+            // 如果此时是disabled，则disabled的样式优先
+            if !isEnabled {
+                return
+            }
+            // 自定义highlighted样式
+            guard adjustsButtonWhenHighlighted else { return }
+            if isHighlighted {
+                alpha = 1
+            } else {
+                UIView.animate(withDuration: 0.25) {
+                    self.alpha = 1
+                }
+            }
+        }
+    }
+
+    func adjustsButtonHighlighted() {
+        guard let highlightedBackgroundColor = highlightedBackgroundColor else {
+            return
+        }
+        
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+
+//        highlightedBackgroundLayer.qmui_removeDefaultAnimations()
+        layer.insertSublayer(highlightedBackgroundLayer, at: 0)
+
+        highlightedBackgroundLayer.frame = bounds
+        highlightedBackgroundLayer.cornerRadius = layer.cornerRadius
+        highlightedBackgroundLayer.backgroundColor = isHighlighted ? highlightedBackgroundColor.cgColor : UIColor.clear.cgColor
+        CATransaction.commit()
+
+        guard let highlightedBorderColor = highlightedBorderColor else { return }
+        layer.borderColor = isHighlighted ? highlightedBorderColor.cgColor : originBorderColor?.cgColor
+
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         if let gradientLayer = layer as? CAGradientLayer {
