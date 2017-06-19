@@ -1,0 +1,25 @@
+PODS:
+  - Eureka (1.7.0)
+  - GesturePassword (1.4.4)
+
+DEPENDENCIES:
+  - Eureka (from `https://github.com/xmartlabs/Eureka.git`, branch `Swift3`)
+  - GesturePassword
+
+EXTERNAL SOURCES:
+  Eureka:
+    :branch: Swift3
+    :git: https://github.com/xmartlabs/Eureka.git
+
+CHECKOUT OPTIONS:
+  Eureka:
+    :commit: 7d68bad8b88c0023460a8121827a9a8536a31fb7
+    :git: https://github.com/xmartlabs/Eureka.git
+
+SPEC CHECKSUMS:
+  Eureka: 2020d9faeef7b7e9adeb9e3d8af779e5931c1897
+  GesturePassword: 8fa92ad92af1c717b584ec2cb4677c8e0540f255
+
+PODFILE CHECKSUM: a94200bb7befebbc23318dab07a0e2359e9e8545
+
+COCOAPODS: 1.1.0.rc.2
