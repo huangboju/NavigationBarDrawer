@@ -152,6 +152,8 @@ class GradientButton: UIButton {
             layer.shadowColor = UIColor(r: 0, g: 233, b: 249).cgColor
             layer.shadowOffset = CGSize(width: 0, height: 2)
             layer.shadowOpacity = 0.9
+
+            layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: frame.height / 2).cgPath
         }
     }
 
