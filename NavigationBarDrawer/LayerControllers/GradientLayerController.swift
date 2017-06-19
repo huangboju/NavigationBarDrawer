@@ -119,6 +119,7 @@ class GradientButton: UIButton {
         }
         
         CATransaction.begin()
+        // 关闭layer默认动画
         CATransaction.setDisableActions(true)
 
 //        highlightedBackgroundLayer.qmui_removeDefaultAnimations()
