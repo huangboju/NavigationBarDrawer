@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6721022DA8BB96F7C627C1E5 /* Pods_NavigationBarDrawer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720ED2B646381CFE6771FF79 /* Pods_NavigationBarDrawer.framework */; };
+		BE1875631F1A55E100635B7B /* BarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1875621F1A55E100635B7B /* BarsView.swift */; };
+		BE1AB8C41F185F5D00A83809 /* SliderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8C31F185F5D00A83809 /* SliderController.swift */; };
+		BE1AB8C71F18785900A83809 /* PullToRefreshAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8C61F18785900A83809 /* PullToRefreshAnimation.swift */; };
+		BE1AB8C91F18789C00A83809 /* PrimeFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8C81F18789C00A83809 /* PrimeFlowLayout.swift */; };
+		BE1AB8CB1F18837500A83809 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8CA1F18837500A83809 /* CustomCell.swift */; };
+		BE8FB9E41F43E39F00D5E67D /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8FB9E31F43E39F00D5E67D /* TipViewController.swift */; };
+		BECCE82E1F21A40000B26292 /* RecordingAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECCE82D1F21A40000B26292 /* RecordingAnimController.swift */; };
+		BECFE12B1F4E83EE002BB0A9 /* StarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFE12A1F4E83EE002BB0A9 /* StarAnimation.swift */; };
 		D802E8911D87CCEE00036A7F /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802E8901D87CCEE00036A7F /* SecondController.swift */; };
 		D802E8931D87CEAE00036A7F /* SugueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802E8921D87CEAE00036A7F /* SugueRow.swift */; };
 		D802E8961D87CEF400036A7F /* ShapeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802E8951D87CEF400036A7F /* ShapeController.swift */; };
@@ -63,6 +71,14 @@
 		720ED2B646381CFE6771FF79 /* Pods_NavigationBarDrawer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationBarDrawer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CD825148600CB1ADABB330 /* Pods-NavigationBarDrawer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationBarDrawer.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationBarDrawer/Pods-NavigationBarDrawer.release.xcconfig"; sourceTree = "<group>"; };
 		BD2D1DFA8615CF97527E234C /* Pods-NavigationBarDrawer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationBarDrawer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationBarDrawer/Pods-NavigationBarDrawer.debug.xcconfig"; sourceTree = "<group>"; };
+		BE1875621F1A55E100635B7B /* BarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarsView.swift; sourceTree = "<group>"; };
+		BE1AB8C31F185F5D00A83809 /* SliderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderController.swift; sourceTree = "<group>"; };
+		BE1AB8C61F18785900A83809 /* PullToRefreshAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshAnimation.swift; sourceTree = "<group>"; };
+		BE1AB8C81F18789C00A83809 /* PrimeFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeFlowLayout.swift; sourceTree = "<group>"; };
+		BE1AB8CA1F18837500A83809 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		BE8FB9E31F43E39F00D5E67D /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		BECCE82D1F21A40000B26292 /* RecordingAnimController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingAnimController.swift; sourceTree = "<group>"; };
+		BECFE12A1F4E83EE002BB0A9 /* StarAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarAnimation.swift; sourceTree = "<group>"; };
 		D802E8901D87CCEE00036A7F /* SecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 		D802E8921D87CEAE00036A7F /* SugueRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SugueRow.swift; sourceTree = "<group>"; };
 		D802E8951D87CEF400036A7F /* ShapeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeController.swift; sourceTree = "<group>"; };
@@ -130,6 +146,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE1AB8C51F18783C00A83809 /* PullToRefreshAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				BE1AB8C61F18785900A83809 /* PullToRefreshAnimation.swift */,
+				BE1AB8C81F18789C00A83809 /* PrimeFlowLayout.swift */,
+				BE1AB8CA1F18837500A83809 /* CustomCell.swift */,
+			);
+			path = PullToRefreshAnimation;
+			sourceTree = "<group>";
+		};
 		C0E22BF875FBC8CF599E2833 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +194,9 @@
 		D817F2561D8C2C0700E50F91 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				BECFE12A1F4E83EE002BB0A9 /* StarAnimation.swift */,
+				BE1875621F1A55E100635B7B /* BarsView.swift */,
+				BE1AB8C51F18783C00A83809 /* PullToRefreshAnimation */,
 				D817F2571D8C2C3700E50F91 /* AnimationGroupController.swift */,
 				D817F2591D8C2F6600E50F91 /* TransitionController.swift */,
 				D817F25D1D8E218600E50F91 /* TimingFunctionController.swift */,
@@ -176,6 +205,9 @@
 				D86AAA1C1EB18061001B1398 /* CAMediaTimingFunctionController.swift */,
 				D86AAA1E1EB184DE001B1398 /* UIViewAnimationOptionController.swift */,
 				D816DCC31EB2D09C008CE7AF /* DrawingViewController.swift */,
+				BE1AB8C31F185F5D00A83809 /* SliderController.swift */,
+				BECCE82D1F21A40000B26292 /* RecordingAnimController.swift */,
+				BE8FB9E31F43E39F00D5E67D /* TipViewController.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -330,7 +362,7 @@
 				TargetAttributes = {
 					D8FB37001D5490E40031BBF4 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 46A8679957;
+						DevelopmentTeam = 3NFVM7S86S;
 						LastSwiftMigration = 0800;
 					};
 					D8FB37141D5490E40031BBF4 = {
@@ -400,13 +432,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NavigationBarDrawer-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		839B5848D7B7948077C9F57E /* [CP] Copy Pods Resources */ = {
@@ -430,9 +465,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NavigationBarDrawer/Pods-NavigationBarDrawer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/GesturePassword/GesturePassword.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GesturePassword.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -452,25 +492,33 @@
 				D8C6F8941D88EAA300F3A7AA /* GradientLayerController.swift in Sources */,
 				D8C6F8CC1D89262C00F3A7AA /* EmitterLayerController.swift in Sources */,
 				D8C6F8D21D8B76AC00F3A7AA /* LayerController.swift in Sources */,
+				BE1AB8C71F18785900A83809 /* PullToRefreshAnimation.swift in Sources */,
 				D8C6F8C71D891C6000F3A7AA /* TiledLayerController.swift in Sources */,
 				D8C6F8D01D892CC400F3A7AA /* PlayerLayerController.swift in Sources */,
 				D8C6F89A1D88FDB600F3A7AA /* ScrollLayerController.swift in Sources */,
 				D816DCC41EB2D09C008CE7AF /* DrawingViewController.swift in Sources */,
 				D817F25C1D8C326800E50F91 /* MainTabBar.swift in Sources */,
 				D802E8911D87CCEE00036A7F /* SecondController.swift in Sources */,
+				BE8FB9E41F43E39F00D5E67D /* TipViewController.swift in Sources */,
 				D8C6F8981D88FA3100F3A7AA /* ReplicatorLayerController.swift in Sources */,
 				D817F2621D8E44E800E50F91 /* BallController.swift in Sources */,
 				D8C6F8901D88E10100F3A7AA /* TextLayerController.swift in Sources */,
 				D8C6F8CE1D892C2800F3A7AA /* EAGLLayerController.swift in Sources */,
 				D802E8931D87CEAE00036A7F /* SugueRow.swift in Sources */,
 				D802E8991D87CF9A00036A7F /* UIViewController+Extensions.swift in Sources */,
+				BE1875631F1A55E100635B7B /* BarsView.swift in Sources */,
 				D8C6F8921D88E48000F3A7AA /* TransformLayerController.swift in Sources */,
+				BE1AB8C41F185F5D00A83809 /* SliderController.swift in Sources */,
 				D86AAA1F1EB184DE001B1398 /* UIViewAnimationOptionController.swift in Sources */,
+				BE1AB8CB1F18837500A83809 /* CustomCell.swift in Sources */,
 				D817F25A1D8C2F6600E50F91 /* TransitionController.swift in Sources */,
 				D817F2601D8E3E3F00E50F91 /* MediaTimingFunctionController.swift in Sources */,
 				D8FB37331D5491E00031BBF4 /* NavigationBarDrawer.swift in Sources */,
+				BE1AB8C91F18789C00A83809 /* PrimeFlowLayout.swift in Sources */,
 				D8FB37051D5490E40031BBF4 /* AppDelegate.swift in Sources */,
 				D86AAA1D1EB18061001B1398 /* CAMediaTimingFunctionController.swift in Sources */,
+				BECCE82E1F21A40000B26292 /* RecordingAnimController.swift in Sources */,
+				BECFE12B1F4E83EE002BB0A9 /* StarAnimation.swift in Sources */,
 				D802E8961D87CEF400036A7F /* ShapeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,10 +670,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 46A8679957;
+				DEVELOPMENT_TEAM = 3NFVM7S86S;
 				INFOPLIST_FILE = NavigationBarDrawer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DDEBUG\"";
 				PRODUCT_BUNDLE_IDENTIFIER = NavigationBarDrawer.NavigationBarDrawer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = NavigationBarDrawer/Bridging.h;
@@ -639,10 +688,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 46A8679957;
+				DEVELOPMENT_TEAM = 3NFVM7S86S;
 				INFOPLIST_FILE = NavigationBarDrawer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = NavigationBarDrawer.NavigationBarDrawer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = NavigationBarDrawer/Bridging.h;

@@ -10,6 +10,7 @@ class ViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         var options = LockOptions()
         options.passwordKeySuffix = "xiAo_Ju"
         options.arcLineWidth = 1
@@ -20,7 +21,7 @@ class ViewController: FormViewController {
                     if !LockManager.hasPassword() {
 
                     } else {
-                        LockManager.showSettingLockControllerIn(self, success: { _ in
+                        LockManager.showSettingLockController(in: self, success: { _ in
 
                         })
                     }
@@ -29,10 +30,10 @@ class ViewController: FormViewController {
             <<< ButtonRow("验证密码") {
                 $0.title = $0.tag
                 $0.onCellSelection({ _, _ in
-                    if !LockCenter.sharedInstance.hasPassword() {
+                    if !LockManager.hasPassword() {
 
                     } else {
-                        LockManager.showVerifyLockControllerIn(self, success: { _ in
+                        LockManager.showVerifyLockController(in: self, success: { _ in
                             print("success")
                         }, forget: { _ in
                             print("forget")
@@ -45,10 +46,10 @@ class ViewController: FormViewController {
             <<< ButtonRow("修改密码") {
                 $0.title = $0.tag
                 $0.onCellSelection({ _, _ in
-                    if !LockCenter.sharedInstance.hasPassword() {
+                    if !LockManager.hasPassword() {
 
                     } else {
-                        LockCenter.sharedInstance.showModifyLockControllerIn(self, success: { _ in
+                        LockManager.showModifyLockController(in: self, success: { _ in
                             print("修改成功")
                         })
                     }

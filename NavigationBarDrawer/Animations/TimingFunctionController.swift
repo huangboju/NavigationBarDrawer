@@ -31,6 +31,11 @@ class TimingFunctionController: UIViewController {
         view.layer.addSublayer(colorLayer)
         view.addSubview(colorView)
         view.addSubview(button)
+        
+        let barsView = BarsView(frame: CGRect(x: 0, y: 100, width: 100, height: 200))
+        barsView.backgroundColor = UIColor.red
+        barsView.startAnimate()
+        view.addSubview(barsView)
     }
 
     func change() {
