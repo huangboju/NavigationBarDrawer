@@ -14,6 +14,17 @@
 		BE1AB8C91F18789C00A83809 /* PrimeFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8C81F18789C00A83809 /* PrimeFlowLayout.swift */; };
 		BE1AB8CB1F18837500A83809 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8CA1F18837500A83809 /* CustomCell.swift */; };
 		BE8FB9E41F43E39F00D5E67D /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8FB9E31F43E39F00D5E67D /* TipViewController.swift */; };
+		BEB635381FA75E1C00525EBB /* TextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6352D1FA75E1C00525EBB /* TextEffect.swift */; };
+		BEB635391FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6352E1FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift */; };
+		BEB6353A1FA75E1C00525EBB /* NSMutableAttributedString+SwiftyAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6352F1FA75E1C00525EBB /* NSMutableAttributedString+SwiftyAttributes.swift */; };
+		BEB6353B1FA75E1C00525EBB /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB635301FA75E1C00525EBB /* Operators.swift */; };
+		BEB6353C1FA75E1C00525EBB /* AttributeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB635311FA75E1C00525EBB /* AttributeName.swift */; };
+		BEB6353D1FA75E1C00525EBB /* String+SwiftyAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB635321FA75E1C00525EBB /* String+SwiftyAttributes.swift */; };
+		BEB6353E1FA75E1C00525EBB /* Attribute+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB635331FA75E1C00525EBB /* Attribute+Sequence.swift */; };
+		BEB6353F1FA75E1C00525EBB /* Ligatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB635341FA75E1C00525EBB /* Ligatures.swift */; };
+		BEB635401FA75E1C00525EBB /* VerticalGlyphForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB635351FA75E1C00525EBB /* VerticalGlyphForm.swift */; };
+		BEB635411FA75E1C00525EBB /* WritingDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB635361FA75E1C00525EBB /* WritingDirection.swift */; };
+		BEB635421FA75E1C00525EBB /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB635371FA75E1C00525EBB /* Attribute.swift */; };
 		BECCE82E1F21A40000B26292 /* RecordingAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECCE82D1F21A40000B26292 /* RecordingAnimController.swift */; };
 		BECFE12B1F4E83EE002BB0A9 /* StarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFE12A1F4E83EE002BB0A9 /* StarAnimation.swift */; };
 		D802E8911D87CCEE00036A7F /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802E8901D87CCEE00036A7F /* SecondController.swift */; };
@@ -77,6 +88,17 @@
 		BE1AB8C81F18789C00A83809 /* PrimeFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeFlowLayout.swift; sourceTree = "<group>"; };
 		BE1AB8CA1F18837500A83809 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		BE8FB9E31F43E39F00D5E67D /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		BEB6352D1FA75E1C00525EBB /* TextEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEffect.swift; sourceTree = "<group>"; };
+		BEB6352E1FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+SwiftyAttributes.swift"; sourceTree = "<group>"; };
+		BEB6352F1FA75E1C00525EBB /* NSMutableAttributedString+SwiftyAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+SwiftyAttributes.swift"; sourceTree = "<group>"; };
+		BEB635301FA75E1C00525EBB /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		BEB635311FA75E1C00525EBB /* AttributeName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeName.swift; sourceTree = "<group>"; };
+		BEB635321FA75E1C00525EBB /* String+SwiftyAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SwiftyAttributes.swift"; sourceTree = "<group>"; };
+		BEB635331FA75E1C00525EBB /* Attribute+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Attribute+Sequence.swift"; sourceTree = "<group>"; };
+		BEB635341FA75E1C00525EBB /* Ligatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ligatures.swift; sourceTree = "<group>"; };
+		BEB635351FA75E1C00525EBB /* VerticalGlyphForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalGlyphForm.swift; sourceTree = "<group>"; };
+		BEB635361FA75E1C00525EBB /* WritingDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingDirection.swift; sourceTree = "<group>"; };
+		BEB635371FA75E1C00525EBB /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
 		BECCE82D1F21A40000B26292 /* RecordingAnimController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingAnimController.swift; sourceTree = "<group>"; };
 		BECFE12A1F4E83EE002BB0A9 /* StarAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarAnimation.swift; sourceTree = "<group>"; };
 		D802E8901D87CCEE00036A7F /* SecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
@@ -154,6 +176,24 @@
 				BE1AB8CA1F18837500A83809 /* CustomCell.swift */,
 			);
 			path = PullToRefreshAnimation;
+			sourceTree = "<group>";
+		};
+		BEB6352C1FA75E1C00525EBB /* Attributed */ = {
+			isa = PBXGroup;
+			children = (
+				BEB6352D1FA75E1C00525EBB /* TextEffect.swift */,
+				BEB6352E1FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift */,
+				BEB6352F1FA75E1C00525EBB /* NSMutableAttributedString+SwiftyAttributes.swift */,
+				BEB635301FA75E1C00525EBB /* Operators.swift */,
+				BEB635311FA75E1C00525EBB /* AttributeName.swift */,
+				BEB635321FA75E1C00525EBB /* String+SwiftyAttributes.swift */,
+				BEB635331FA75E1C00525EBB /* Attribute+Sequence.swift */,
+				BEB635341FA75E1C00525EBB /* Ligatures.swift */,
+				BEB635351FA75E1C00525EBB /* VerticalGlyphForm.swift */,
+				BEB635361FA75E1C00525EBB /* WritingDirection.swift */,
+				BEB635371FA75E1C00525EBB /* Attribute.swift */,
+			);
+			path = Attributed;
 			sourceTree = "<group>";
 		};
 		C0E22BF875FBC8CF599E2833 /* Pods */ = {
@@ -246,6 +286,7 @@
 		D8FB37031D5490E40031BBF4 /* NavigationBarDrawer */ = {
 			isa = PBXGroup;
 			children = (
+				BEB6352C1FA75E1C00525EBB /* Attributed */,
 				D817F2561D8C2C0700E50F91 /* Animations */,
 				D8C6F8C81D89229A00F3A7AA /* Resources */,
 				D802E8971D87CF7D00036A7F /* Extensions */,
@@ -357,22 +398,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = xiAo_Ju;
 				TargetAttributes = {
 					D8FB37001D5490E40031BBF4 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 3NFVM7S86S;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					D8FB37141D5490E40031BBF4 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 						TestTargetID = D8FB37001D5490E40031BBF4;
 					};
 					D8FB371F1D5490E40031BBF4 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 						TestTargetID = D8FB37001D5490E40031BBF4;
 					};
 				};
@@ -487,10 +528,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D817F25E1D8E218600E50F91 /* TimingFunctionController.swift in Sources */,
+				BEB635401FA75E1C00525EBB /* VerticalGlyphForm.swift in Sources */,
 				D817F2581D8C2C3700E50F91 /* AnimationGroupController.swift in Sources */,
 				D8FB37071D5490E40031BBF4 /* ViewController.swift in Sources */,
 				D8C6F8941D88EAA300F3A7AA /* GradientLayerController.swift in Sources */,
 				D8C6F8CC1D89262C00F3A7AA /* EmitterLayerController.swift in Sources */,
+				BEB6353E1FA75E1C00525EBB /* Attribute+Sequence.swift in Sources */,
 				D8C6F8D21D8B76AC00F3A7AA /* LayerController.swift in Sources */,
 				BE1AB8C71F18785900A83809 /* PullToRefreshAnimation.swift in Sources */,
 				D8C6F8C71D891C6000F3A7AA /* TiledLayerController.swift in Sources */,
@@ -500,17 +543,26 @@
 				D817F25C1D8C326800E50F91 /* MainTabBar.swift in Sources */,
 				D802E8911D87CCEE00036A7F /* SecondController.swift in Sources */,
 				BE8FB9E41F43E39F00D5E67D /* TipViewController.swift in Sources */,
+				BEB635381FA75E1C00525EBB /* TextEffect.swift in Sources */,
+				BEB6353F1FA75E1C00525EBB /* Ligatures.swift in Sources */,
 				D8C6F8981D88FA3100F3A7AA /* ReplicatorLayerController.swift in Sources */,
+				BEB635391FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift in Sources */,
+				BEB6353A1FA75E1C00525EBB /* NSMutableAttributedString+SwiftyAttributes.swift in Sources */,
 				D817F2621D8E44E800E50F91 /* BallController.swift in Sources */,
+				BEB6353C1FA75E1C00525EBB /* AttributeName.swift in Sources */,
 				D8C6F8901D88E10100F3A7AA /* TextLayerController.swift in Sources */,
 				D8C6F8CE1D892C2800F3A7AA /* EAGLLayerController.swift in Sources */,
 				D802E8931D87CEAE00036A7F /* SugueRow.swift in Sources */,
+				BEB6353D1FA75E1C00525EBB /* String+SwiftyAttributes.swift in Sources */,
 				D802E8991D87CF9A00036A7F /* UIViewController+Extensions.swift in Sources */,
 				BE1875631F1A55E100635B7B /* BarsView.swift in Sources */,
 				D8C6F8921D88E48000F3A7AA /* TransformLayerController.swift in Sources */,
+				BEB635421FA75E1C00525EBB /* Attribute.swift in Sources */,
+				BEB6353B1FA75E1C00525EBB /* Operators.swift in Sources */,
 				BE1AB8C41F185F5D00A83809 /* SliderController.swift in Sources */,
 				D86AAA1F1EB184DE001B1398 /* UIViewAnimationOptionController.swift in Sources */,
 				BE1AB8CB1F18837500A83809 /* CustomCell.swift in Sources */,
+				BEB635411FA75E1C00525EBB /* WritingDirection.swift in Sources */,
 				D817F25A1D8C2F6600E50F91 /* TransitionController.swift in Sources */,
 				D817F2601D8E3E3F00E50F91 /* MediaTimingFunctionController.swift in Sources */,
 				D8FB37331D5491E00031BBF4 /* NavigationBarDrawer.swift in Sources */,
@@ -583,14 +635,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -631,14 +689,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -678,7 +742,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NavigationBarDrawer.NavigationBarDrawer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = NavigationBarDrawer/Bridging.h;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -696,7 +761,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NavigationBarDrawer.NavigationBarDrawer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = NavigationBarDrawer/Bridging.h;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -708,7 +774,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NavigationBarDrawer.NavigationBarDrawerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavigationBarDrawer.app/NavigationBarDrawer";
 			};
 			name = Debug;
@@ -721,7 +788,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NavigationBarDrawer.NavigationBarDrawerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavigationBarDrawer.app/NavigationBarDrawer";
 			};
 			name = Release;
@@ -733,7 +801,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NavigationBarDrawer.NavigationBarDrawerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = NavigationBarDrawer;
 			};
 			name = Debug;
@@ -745,7 +814,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NavigationBarDrawer.NavigationBarDrawerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = NavigationBarDrawer;
 			};
 			name = Release;

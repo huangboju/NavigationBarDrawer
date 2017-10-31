@@ -58,7 +58,7 @@ class SliderController: UIViewController {
         view.addSubview(slider)
     }
 
-    func valueChange(sender: UISlider) {
+    @objc func valueChange(sender: UISlider) {
         layer.timeOffset = CFTimeInterval(sender.value)
     }
 }

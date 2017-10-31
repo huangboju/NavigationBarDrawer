@@ -57,11 +57,11 @@ class AnimationGroupController: UIViewController {
         colorLayer.add(groupAnimation, forKey: nil)
     }
     
-    func suspendAction() {
+    @objc func suspendAction() {
         colorLayer.animationPause()
     }
 
-    func resumeAction() {
+    @objc func resumeAction() {
         colorLayer.animationResume()
     }
 

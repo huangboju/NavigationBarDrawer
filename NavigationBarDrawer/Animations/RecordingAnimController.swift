@@ -90,13 +90,13 @@ class RecordingAnimController: UIViewController {
         view.layer.addSublayer(replicatorLayer)
     }
 
-    func valueChange(sender: UISlider) {
+    @objc func valueChange(sender: UISlider) {
         replicatorLayer.timeOffset = CFTimeInterval(sender.value)
     }
 
     var value: Double = 0.01
 
-    func getCurrentWave() {
+    @objc func getCurrentWave() {
         replicatorLayer.timeOffset = value
         value += 0.01
     }

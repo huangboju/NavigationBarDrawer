@@ -37,7 +37,7 @@ class StarAnimation: UIViewController {
         navigationItem.rightBarButtonItem = startItem
     }
 
-    func animationAction() {
+    @objc func animationAction() {
         
 //        initBasicAnimation()
 

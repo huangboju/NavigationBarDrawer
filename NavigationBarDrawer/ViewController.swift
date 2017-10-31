@@ -65,7 +65,7 @@ class ViewController: FormViewController {
         drawer = NavigationBarDrawer()
         drawer?.scrollView = tableView
         drawer?.objects = [s]
-        let systemItems: [UIBarButtonSystemItem] = [.add, .flexibleSpace, .trash, .flexibleSpace, .add]
+//        let systemItems: [UIBarButtonSystemItem] = [.add, .flexibleSpace, .trash, .flexibleSpace, .add]
         //        drawer?.items = systemItems.map{ UIBarButtonItem(barButtonSystemItem: $0, target: self, action: #selector(action)) }
         navigationItem.rightBarButtonItem = editButtonItem
         let leftBarButton = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(leftAction))
@@ -79,7 +79,7 @@ class ViewController: FormViewController {
         }
     }
 
-    func longPressAction(sender: UILongPressGestureRecognizer) {
+    @objc func longPressAction(sender: UILongPressGestureRecognizer) {
         if sender.state == .ended {
             drawer?.showFromNavigationBar(navigationController, true)
         }
@@ -99,11 +99,11 @@ class ViewController: FormViewController {
         }
     }
 
-    func leftAction() {
+    @objc func leftAction() {
         print("aaaaaa")
     }
 
-    func action() {
+    @objc func action() {
         print("aaaaaa")
     }
 }

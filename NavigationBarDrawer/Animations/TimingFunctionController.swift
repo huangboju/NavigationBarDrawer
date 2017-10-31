@@ -38,7 +38,7 @@ class TimingFunctionController: UIViewController {
         view.addSubview(barsView)
     }
 
-    func change() {
+    @objc func change() {
         let animation = CAKeyframeAnimation()
         animation.keyPath = "backgroundColor"
         animation.duration = 2.0

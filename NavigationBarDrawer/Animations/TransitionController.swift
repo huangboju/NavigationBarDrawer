@@ -35,7 +35,7 @@ class TransitionController: UIViewController {
         UIView.transition(with: imageView, duration: 1, options: .transitionFlipFromLeft, animations: {
             let currentImage = self.imageView.image
             var index = self.images.index { $0 == currentImage }
-            print(index)
+            print(index ?? (Any).self)
             index = (index! + 1) % self.images.count
             self.imageView.image = self.images[index!]
         }, completion: nil)
@@ -51,7 +51,7 @@ class TransitionController: UIViewController {
         //        imageView.image = self.images[index!]
     }
 
-    func performTransition() {
+    @objc func performTransition() {
         // preserve the current view snapshot
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, true, 0.0)
         view.layer.render(in: UIGraphicsGetCurrentContext()!)
@@ -65,7 +65,7 @@ class TransitionController: UIViewController {
         // perform animation (anything you like)
         UIView.animate(withDuration: 1, animations: {
             var transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
-            transform = transform.rotated(by: CGFloat(M_PI_2))
+            transform = transform.rotated(by: CGFloat.pi / 2)
             coverView.transform = transform
             coverView.alpha = 0.0
         }, completion: { _ in

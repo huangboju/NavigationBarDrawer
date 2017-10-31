@@ -90,7 +90,7 @@ class CAMediaTimingFunctionController: UIViewController {
         //flip geometry so that 0,0 is in the bottom-left
     }
 
-    func valueChange() {
+    @objc func valueChange() {
         selectedName = names[segmentView.selectedSegmentIndex]
         drawTimeFution()
     }

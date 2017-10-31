@@ -86,7 +86,7 @@ class LayerController: UIViewController, CAAnimationDelegate {
         }
     }
 
-    func change() {
+    @objc func change() {
         //        CATransaction.begin()
         // 关闭layer隐式动画
         //        CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)

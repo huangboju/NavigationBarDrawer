@@ -33,15 +33,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 #if DEBUG
 // 任意界面摇一摇
 extension UIWindow {
-    
+
     open override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
         print(#function)
     }
-    
+
     open override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         print(#function)
     }
-    
+
     open override func motionCancelled(_ motion: UIEventSubtype, with event: UIEvent?) {
         print(#function)
     }

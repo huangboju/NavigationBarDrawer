@@ -54,7 +54,7 @@ class UIViewAnimationOptionController: UIViewController {
         .curveLinear
     ]
     
-    func valueChange() {
+    @objc func valueChange() {
         selectedName = names[segmentView.selectedSegmentIndex]
     }
 

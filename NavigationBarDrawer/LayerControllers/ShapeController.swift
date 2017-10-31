@@ -47,12 +47,12 @@ class ShapeController: UIViewController {
         //apply swinging animation (which won't play because layer is paused)
         let animation = CABasicAnimation()
         animation.keyPath = "transform.rotation.y"
-        animation.toValue = -M_PI_2
+        animation.toValue = -(CGFloat.pi / 2)
         animation.duration = 1.0
         doorLayer.add(animation, forKey: nil)
     }
     
-    func action(sender: UIPanGestureRecognizer) {
+    @objc func action(sender: UIPanGestureRecognizer) {
         //get horizontal component of pan gesture
         
         var x = sender.translation(in: view).x
