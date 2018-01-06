@@ -68,7 +68,7 @@ class LayerController: UIViewController, CAAnimationDelegate {
         let animation = CABasicAnimation()
         animation.keyPath = "transform.rotation"
         animation.duration = 2.0
-        animation.byValue = (M_PI * 2)
+        animation.byValue = (CFloat.pi * 2)
         shipLayer.add(animation, forKey: nil)
     }
 

@@ -19,6 +19,7 @@ class SecondController: FormViewController {
             <<< creatSegueRow(with: EmitterLayerController.self)
             <<< creatSegueRow(with: PlayerLayerController.self)
             <<< creatSegueRow(with: LayerController.self)
+            <<< creatSegueRow(with: ContentsRectController.self)
 
             +++ Section("animation")
 

@@ -13,6 +13,7 @@
 		BE1AB8C71F18785900A83809 /* PullToRefreshAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8C61F18785900A83809 /* PullToRefreshAnimation.swift */; };
 		BE1AB8C91F18789C00A83809 /* PrimeFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8C81F18789C00A83809 /* PrimeFlowLayout.swift */; };
 		BE1AB8CB1F18837500A83809 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8CA1F18837500A83809 /* CustomCell.swift */; };
+		BE4E0A5F2000B332005FFD77 /* ContentsRectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E0A5E2000B332005FFD77 /* ContentsRectController.swift */; };
 		BE8FB9E41F43E39F00D5E67D /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8FB9E31F43E39F00D5E67D /* TipViewController.swift */; };
 		BEB635381FA75E1C00525EBB /* TextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6352D1FA75E1C00525EBB /* TextEffect.swift */; };
 		BEB635391FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6352E1FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift */; };
@@ -87,6 +88,7 @@
 		BE1AB8C61F18785900A83809 /* PullToRefreshAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshAnimation.swift; sourceTree = "<group>"; };
 		BE1AB8C81F18789C00A83809 /* PrimeFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeFlowLayout.swift; sourceTree = "<group>"; };
 		BE1AB8CA1F18837500A83809 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		BE4E0A5E2000B332005FFD77 /* ContentsRectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsRectController.swift; sourceTree = "<group>"; };
 		BE8FB9E31F43E39F00D5E67D /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		BEB6352D1FA75E1C00525EBB /* TextEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEffect.swift; sourceTree = "<group>"; };
 		BEB6352E1FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+SwiftyAttributes.swift"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				D8C6F8CD1D892C2800F3A7AA /* EAGLLayerController.swift */,
 				D8C6F8CF1D892CC400F3A7AA /* PlayerLayerController.swift */,
 				D8C6F8D11D8B76AC00F3A7AA /* LayerController.swift */,
+				BE4E0A5E2000B332005FFD77 /* ContentsRectController.swift */,
 			);
 			path = LayerControllers;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				BE1AB8C71F18785900A83809 /* PullToRefreshAnimation.swift in Sources */,
 				D8C6F8C71D891C6000F3A7AA /* TiledLayerController.swift in Sources */,
 				D8C6F8D01D892CC400F3A7AA /* PlayerLayerController.swift in Sources */,
+				BE4E0A5F2000B332005FFD77 /* ContentsRectController.swift in Sources */,
 				D8C6F89A1D88FDB600F3A7AA /* ScrollLayerController.swift in Sources */,
 				D816DCC41EB2D09C008CE7AF /* DrawingViewController.swift in Sources */,
 				D817F25C1D8C326800E50F91 /* MainTabBar.swift in Sources */,
