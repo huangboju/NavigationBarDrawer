@@ -2,12 +2,34 @@
 //  Copyright © 2016年 xiAo_Ju. All rights reserved.
 //
 
-class MainTabBar: UITabBarController {
+class MainTabBar: UITabBarController, UITabBarControllerDelegate {
 
     var indexFlag = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        delegate = self
+    }
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        //set up crossfade transition
+        let transition = CATransition()
+        // www.jianshu.com/p/239cf81eb1eb
+        // https://www.jianshu.com/p/7384c0c930df
+//        NSString *const kCATransitionCube = @"cube";
+//        NSString *const kCATransitionSuckEffect = @"suckEffect";
+//        NSString *const kCATransitionOglFlip = @"oglFlip";
+//        NSString *const kCATransitionRippleEffect = @"rippleEffect";
+//        NSString *const kCATransitionPageCurl = @"pageCurl";
+//        NSString *const kCATransitionPageUnCurl = @"pageUnCurl";
+//        NSString *const kCATransitionCameraIrisHollowOpen = @"cameraIrisHollowOpen";
+//        NSString *const kCATransitionCameraIrisHollowClose = @"cameraIrisHollowClose";
+        // rippleEffect 滴水效果
+        transition.type = kCATransitionFade
+        transition.duration = 0.25
+        //apply transition to tab bar controller's view
+        tabBarController.view.layer.add(transition, forKey: nil)
     }
 
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {

@@ -28,6 +28,7 @@ class TimingFunctionController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
 
+
         view.layer.addSublayer(colorLayer)
         view.addSubview(colorView)
         view.addSubview(button)

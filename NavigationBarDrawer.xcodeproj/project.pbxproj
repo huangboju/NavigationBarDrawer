@@ -13,7 +13,10 @@
 		BE1AB8C71F18785900A83809 /* PullToRefreshAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8C61F18785900A83809 /* PullToRefreshAnimation.swift */; };
 		BE1AB8C91F18789C00A83809 /* PrimeFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8C81F18789C00A83809 /* PrimeFlowLayout.swift */; };
 		BE1AB8CB1F18837500A83809 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8CA1F18837500A83809 /* CustomCell.swift */; };
+		BE1EAAB92005B7B2001A17F9 /* TimeOffsetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1EAAB82005B7B2001A17F9 /* TimeOffsetController.swift */; };
 		BE4E0A5F2000B332005FFD77 /* ContentsRectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E0A5E2000B332005FFD77 /* ContentsRectController.swift */; };
+		BE697ABD200F3759009C6762 /* ViewWithPersistentAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE697ABB200F3759009C6762 /* ViewWithPersistentAnimations.swift */; };
+		BE697ABE200F3759009C6762 /* CALayer+Pause.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE697ABC200F3759009C6762 /* CALayer+Pause.swift */; };
 		BE8FB9E41F43E39F00D5E67D /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8FB9E31F43E39F00D5E67D /* TipViewController.swift */; };
 		BEB635381FA75E1C00525EBB /* TextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6352D1FA75E1C00525EBB /* TextEffect.swift */; };
 		BEB635391FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB6352E1FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift */; };
@@ -28,6 +31,7 @@
 		BEB635421FA75E1C00525EBB /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB635371FA75E1C00525EBB /* Attribute.swift */; };
 		BECCE82E1F21A40000B26292 /* RecordingAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECCE82D1F21A40000B26292 /* RecordingAnimController.swift */; };
 		BECFE12B1F4E83EE002BB0A9 /* StarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFE12A1F4E83EE002BB0A9 /* StarAnimation.swift */; };
+		BEDB1AEF2004678A00BFDF0B /* PresentationLayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDB1AEE2004678A00BFDF0B /* PresentationLayerController.swift */; };
 		D802E8911D87CCEE00036A7F /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802E8901D87CCEE00036A7F /* SecondController.swift */; };
 		D802E8931D87CEAE00036A7F /* SugueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802E8921D87CEAE00036A7F /* SugueRow.swift */; };
 		D802E8961D87CEF400036A7F /* ShapeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802E8951D87CEF400036A7F /* ShapeController.swift */; };
@@ -88,7 +92,10 @@
 		BE1AB8C61F18785900A83809 /* PullToRefreshAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshAnimation.swift; sourceTree = "<group>"; };
 		BE1AB8C81F18789C00A83809 /* PrimeFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeFlowLayout.swift; sourceTree = "<group>"; };
 		BE1AB8CA1F18837500A83809 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		BE1EAAB82005B7B2001A17F9 /* TimeOffsetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOffsetController.swift; sourceTree = "<group>"; };
 		BE4E0A5E2000B332005FFD77 /* ContentsRectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsRectController.swift; sourceTree = "<group>"; };
+		BE697ABB200F3759009C6762 /* ViewWithPersistentAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWithPersistentAnimations.swift; sourceTree = "<group>"; };
+		BE697ABC200F3759009C6762 /* CALayer+Pause.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Pause.swift"; sourceTree = "<group>"; };
 		BE8FB9E31F43E39F00D5E67D /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		BEB6352D1FA75E1C00525EBB /* TextEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEffect.swift; sourceTree = "<group>"; };
 		BEB6352E1FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+SwiftyAttributes.swift"; sourceTree = "<group>"; };
@@ -103,6 +110,7 @@
 		BEB635371FA75E1C00525EBB /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
 		BECCE82D1F21A40000B26292 /* RecordingAnimController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingAnimController.swift; sourceTree = "<group>"; };
 		BECFE12A1F4E83EE002BB0A9 /* StarAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarAnimation.swift; sourceTree = "<group>"; };
+		BEDB1AEE2004678A00BFDF0B /* PresentationLayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationLayerController.swift; sourceTree = "<group>"; };
 		D802E8901D87CCEE00036A7F /* SecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 		D802E8921D87CEAE00036A7F /* SugueRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SugueRow.swift; sourceTree = "<group>"; };
 		D802E8951D87CEF400036A7F /* ShapeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeController.swift; sourceTree = "<group>"; };
@@ -222,6 +230,7 @@
 				D8C6F8CF1D892CC400F3A7AA /* PlayerLayerController.swift */,
 				D8C6F8D11D8B76AC00F3A7AA /* LayerController.swift */,
 				BE4E0A5E2000B332005FFD77 /* ContentsRectController.swift */,
+				BEDB1AEE2004678A00BFDF0B /* PresentationLayerController.swift */,
 			);
 			path = LayerControllers;
 			sourceTree = "<group>";
@@ -237,6 +246,8 @@
 		D817F2561D8C2C0700E50F91 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				BE697ABC200F3759009C6762 /* CALayer+Pause.swift */,
+				BE697ABB200F3759009C6762 /* ViewWithPersistentAnimations.swift */,
 				BECFE12A1F4E83EE002BB0A9 /* StarAnimation.swift */,
 				BE1875621F1A55E100635B7B /* BarsView.swift */,
 				BE1AB8C51F18783C00A83809 /* PullToRefreshAnimation */,
@@ -251,6 +262,7 @@
 				BE1AB8C31F185F5D00A83809 /* SliderController.swift */,
 				BECCE82D1F21A40000B26292 /* RecordingAnimController.swift */,
 				BE8FB9E31F43E39F00D5E67D /* TipViewController.swift */,
+				BE1EAAB82005B7B2001A17F9 /* TimeOffsetController.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -401,7 +413,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = xiAo_Ju;
 				TargetAttributes = {
 					D8FB37001D5490E40031BBF4 = {
@@ -531,6 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D817F25E1D8E218600E50F91 /* TimingFunctionController.swift in Sources */,
+				BE697ABD200F3759009C6762 /* ViewWithPersistentAnimations.swift in Sources */,
 				BEB635401FA75E1C00525EBB /* VerticalGlyphForm.swift in Sources */,
 				D817F2581D8C2C3700E50F91 /* AnimationGroupController.swift in Sources */,
 				D8FB37071D5490E40031BBF4 /* ViewController.swift in Sources */,
@@ -539,6 +552,7 @@
 				BEB6353E1FA75E1C00525EBB /* Attribute+Sequence.swift in Sources */,
 				D8C6F8D21D8B76AC00F3A7AA /* LayerController.swift in Sources */,
 				BE1AB8C71F18785900A83809 /* PullToRefreshAnimation.swift in Sources */,
+				BE697ABE200F3759009C6762 /* CALayer+Pause.swift in Sources */,
 				D8C6F8C71D891C6000F3A7AA /* TiledLayerController.swift in Sources */,
 				D8C6F8D01D892CC400F3A7AA /* PlayerLayerController.swift in Sources */,
 				BE4E0A5F2000B332005FFD77 /* ContentsRectController.swift in Sources */,
@@ -549,6 +563,7 @@
 				BE8FB9E41F43E39F00D5E67D /* TipViewController.swift in Sources */,
 				BEB635381FA75E1C00525EBB /* TextEffect.swift in Sources */,
 				BEB6353F1FA75E1C00525EBB /* Ligatures.swift in Sources */,
+				BEDB1AEF2004678A00BFDF0B /* PresentationLayerController.swift in Sources */,
 				D8C6F8981D88FA3100F3A7AA /* ReplicatorLayerController.swift in Sources */,
 				BEB635391FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift in Sources */,
 				BEB6353A1FA75E1C00525EBB /* NSMutableAttributedString+SwiftyAttributes.swift in Sources */,
@@ -560,6 +575,7 @@
 				BEB6353D1FA75E1C00525EBB /* String+SwiftyAttributes.swift in Sources */,
 				D802E8991D87CF9A00036A7F /* UIViewController+Extensions.swift in Sources */,
 				BE1875631F1A55E100635B7B /* BarsView.swift in Sources */,
+				BE1EAAB92005B7B2001A17F9 /* TimeOffsetController.swift in Sources */,
 				D8C6F8921D88E48000F3A7AA /* TransformLayerController.swift in Sources */,
 				BEB635421FA75E1C00525EBB /* Attribute.swift in Sources */,
 				BEB6353B1FA75E1C00525EBB /* Operators.swift in Sources */,
@@ -643,12 +659,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -697,12 +715,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
