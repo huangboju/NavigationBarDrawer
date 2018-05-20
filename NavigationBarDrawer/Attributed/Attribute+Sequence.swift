@@ -16,7 +16,7 @@ extension Sequence where Iterator.Element == (key: NSAttributedStringKey, value:
 
     /// Returns an array of `Attribute`s converted from the dictionary of attributes. Use this whenever you want to convert [String: Any] to [Attribute].
     public var swiftyAttributes: [Attribute] {
-        return flatMap { name, value in
+        return compactMap { name, value in
             if let attrName = Attribute.Name(rawValue: name) {
                 return Attribute(name: attrName, foundationValue: value)
             } else {

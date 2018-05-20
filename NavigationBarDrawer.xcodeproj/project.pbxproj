@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6721022DA8BB96F7C627C1E5 /* Pods_NavigationBarDrawer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720ED2B646381CFE6771FF79 /* Pods_NavigationBarDrawer.framework */; };
+		BE14E88820B0F74800E68A92 /* UIAppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14E88720B0F74800E68A92 /* UIAppearanceController.swift */; };
 		BE1875631F1A55E100635B7B /* BarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1875621F1A55E100635B7B /* BarsView.swift */; };
 		BE1AB8C41F185F5D00A83809 /* SliderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8C31F185F5D00A83809 /* SliderController.swift */; };
 		BE1AB8C71F18785900A83809 /* PullToRefreshAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB8C61F18785900A83809 /* PullToRefreshAnimation.swift */; };
@@ -87,6 +88,7 @@
 		720ED2B646381CFE6771FF79 /* Pods_NavigationBarDrawer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationBarDrawer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CD825148600CB1ADABB330 /* Pods-NavigationBarDrawer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationBarDrawer.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationBarDrawer/Pods-NavigationBarDrawer.release.xcconfig"; sourceTree = "<group>"; };
 		BD2D1DFA8615CF97527E234C /* Pods-NavigationBarDrawer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationBarDrawer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationBarDrawer/Pods-NavigationBarDrawer.debug.xcconfig"; sourceTree = "<group>"; };
+		BE14E88720B0F74800E68A92 /* UIAppearanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIAppearanceController.swift; path = NavigationBarDrawer/UIAppearanceController.swift; sourceTree = "<group>"; };
 		BE1875621F1A55E100635B7B /* BarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarsView.swift; sourceTree = "<group>"; };
 		BE1AB8C31F185F5D00A83809 /* SliderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderController.swift; sourceTree = "<group>"; };
 		BE1AB8C61F18785900A83809 /* PullToRefreshAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshAnimation.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 		D8FB36F81D5490E40031BBF4 = {
 			isa = PBXGroup;
 			children = (
+				BE14E88720B0F74800E68A92 /* UIAppearanceController.swift */,
 				D8FB37031D5490E40031BBF4 /* NavigationBarDrawer */,
 				D8FB37181D5490E40031BBF4 /* NavigationBarDrawerTests */,
 				D8FB37231D5490E40031BBF4 /* NavigationBarDrawerUITests */,
@@ -592,6 +595,7 @@
 				BECCE82E1F21A40000B26292 /* RecordingAnimController.swift in Sources */,
 				BECFE12B1F4E83EE002BB0A9 /* StarAnimation.swift in Sources */,
 				D802E8961D87CEF400036A7F /* ShapeController.swift in Sources */,
+				BE14E88820B0F74800E68A92 /* UIAppearanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
