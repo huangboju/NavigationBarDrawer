@@ -23,7 +23,7 @@ class NavigationBarDrawer: UIToolbar {
                 guard items == nil else {
                     fatalError("objects 和 items 只能设置一个")
                 }
-                let controls = objects.flatMap { $0 as? BDSwitch }
+                let controls = objects.compactMap { $0 as? BDSwitch }
                 let titleLable = UILabel(frame: CGRect(x: 8, y: 31, width: 0, height: 0))
                 titleLable.text = controls[0].title
                 titleLable.font = UIFont.systemFont(ofSize: 8)
