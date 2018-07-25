@@ -32,12 +32,12 @@ class LayerController: UIViewController, CAAnimationDelegate {
 
         let transition = CATransition()
         transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromLeft
+        transition.subtype = kCATransitionFromTop
         colorLayer.actions = ["backgroundColor": transition]
 
         view.addSubview(button)
 
-        keyframeAnimation()
+//        keyframeAnimation()
     }
 
     func keyframeAnimation() {
