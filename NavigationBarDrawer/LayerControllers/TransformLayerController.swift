@@ -21,8 +21,8 @@ class TransformLayerController: UIViewController {
 
         var c2t = CATransform3DIdentity
         c2t = CATransform3DTranslate(c2t, 100, 0, 0)
-        c2t = CATransform3DRotate(c2t, -CGFloat(M_PI_4), 1, 0, 0)
-        c2t = CATransform3DRotate(c2t, -CGFloat(M_PI_4), 0, 1, 0)
+        c2t = CATransform3DRotate(c2t, -CGFloat.pi / 4, 1, 0, 0)
+        c2t = CATransform3DRotate(c2t, -CGFloat.pi / 4, 0, 1, 0)
         let cube2 = cubeWithTransform(c2t)
         view.layer.addSublayer(cube2)
     }
@@ -51,27 +51,27 @@ class TransformLayerController: UIViewController {
 
         // add cube face 2
         ct = CATransform3DMakeTranslation(50, 0, 0)
-        ct = CATransform3DRotate(ct, CGFloat(M_PI_2), 0, 1, 0)
+        ct = CATransform3DRotate(ct, CGFloat.pi / 2, 0, 1, 0)
         cube.addSublayer(faceWithTransform(ct))
 
         // add cube face 3
         ct = CATransform3DMakeTranslation(0, -50, 0)
-        ct = CATransform3DRotate(ct, CGFloat(M_PI_2), 1, 0, 0)
+        ct = CATransform3DRotate(ct, CGFloat.pi / 2, 1, 0, 0)
         cube.addSublayer(faceWithTransform(ct))
 
         // add cube face 4
         ct = CATransform3DMakeTranslation(0, 50, 0)
-        ct = CATransform3DRotate(ct, -CGFloat(M_PI_2), 1, 0, 0)
+        ct = CATransform3DRotate(ct, -CGFloat.pi / 2, 1, 0, 0)
         cube.addSublayer(faceWithTransform(ct))
 
         // add cube face 5
         ct = CATransform3DMakeTranslation(-50, 0, 0)
-        ct = CATransform3DRotate(ct, -CGFloat(M_PI_2), 0, 1, 0)
+        ct = CATransform3DRotate(ct, -CGFloat.pi / 2, 0, 1, 0)
         cube.addSublayer(faceWithTransform(ct))
 
         // add cube face 6
         ct = CATransform3DMakeTranslation(0, 0, -50)
-        ct = CATransform3DRotate(ct, CGFloat(M_PI), 0, 1, 0)
+        ct = CATransform3DRotate(ct, CGFloat.pi, 0, 1, 0)
         cube.addSublayer(faceWithTransform(ct))
 
         // center the cube layer within the container

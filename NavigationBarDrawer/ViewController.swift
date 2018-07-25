@@ -11,47 +11,49 @@ class ViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var options = LockOptions()
-        options.passwordKeySuffix = "xiAo_Ju"
-        options.arcLineWidth = 1
+        
+        LockCenter.passwordKeySuffix = "xiAo_Ju"
+        LockCenter.lineWidth = 5
         form +++ Section("手势密码")
             <<< ButtonRow("设置密码") {
                 $0.title = $0.tag
                 $0.onCellSelection({ _, _ in
-                    if !LockManager.hasPassword() {
+                    if !LockCenter.hasPassword() {
 
                     } else {
-                        LockManager.showSettingLockController(in: self, success: { _ in
-
-                        })
+                        showSetPattern(in: self).successHandle = {
+                            print($0)
+                        }
                     }
                 })
             }
             <<< ButtonRow("验证密码") {
                 $0.title = $0.tag
                 $0.onCellSelection({ _, _ in
-                    if !LockManager.hasPassword() {
+                    if !LockCenter.hasPassword() {
 
                     } else {
-                        LockManager.showVerifyLockController(in: self, success: { _ in
-                            print("success")
-                        }, forget: { _ in
-                            print("forget")
-                        }, overrunTimes: { _ in
-                            print("overrunTimes")
-                        })
+                        showVerifyPattern(in: self).successHandle {
+                            
+                            _ in
+                            
+                        }.forgetHandle{ _ in
+                            
+                        }.overTimesHandle { _ in
+                                
+                        }
                     }
                 })
             }
             <<< ButtonRow("修改密码") {
                 $0.title = $0.tag
                 $0.onCellSelection({ _, _ in
-                    if !LockManager.hasPassword() {
+                    if !LockCenter.hasPassword() {
 
                     } else {
-                        LockManager.showModifyLockController(in: self, success: { _ in
+                        showModifyPattern(in: self).resetSuccessHandle { _ in
                             print("修改成功")
-                        })
+                        }
                     }
                 })
             }

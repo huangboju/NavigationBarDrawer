@@ -24,7 +24,7 @@ class EmitterLayerController: UIViewController {
         cell.alphaSpeed = -0.4
         cell.velocity = 50
         cell.velocityRange = 50
-        cell.emissionRange = CGFloat(M_PI) * 2.0
+        cell.emissionRange = CGFloat.pi * 2.0
 
         // add particle template to emitter
         emitter.emitterCells = [cell]

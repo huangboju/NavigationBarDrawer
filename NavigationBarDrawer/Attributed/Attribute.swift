@@ -120,7 +120,7 @@ public enum Attribute {
         case .verticalGlyphForm: ret = .verticalGlyphForm(VerticalGlyphForm(rawValue: validate(foundationValue))!)
         case .writingDirection:
             let values: [Int] = validate(foundationValue)
-            ret = .writingDirections(values.flatMap(WritingDirection.init))
+            ret = .writingDirections(values.compactMap(WritingDirection.init))
         }
 
         self = ret

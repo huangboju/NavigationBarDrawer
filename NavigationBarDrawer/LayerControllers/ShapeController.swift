@@ -15,11 +15,11 @@ class ShapeController: UIViewController {
         
         //test layer action when outside of animation block
         
-        print("Outside: \(layerView.action(for: layerView.layer, forKey: "backgroundColor"))");
+        print("Outside: \(String(describing: layerView.action(for: layerView.layer, forKey: "backgroundColor")))");
         //begin animation block
         UIView.beginAnimations(nil, context: nil)
         //test layer action when inside of animation block
-        print("Inside: \(layerView.action(for: layerView.layer, forKey: "backgroundColor"))")
+        print("Inside: \(String(describing: layerView.action(for: layerView.layer, forKey: "backgroundColor")))")
         //end animation block
         UIView.commitAnimations()
         

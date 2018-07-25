@@ -1,10 +1,14 @@
 PODS:
-  - Eureka (4.1.1)
-  - GesturePassword (1.6.0)
+  - Eureka (4.2.0)
+  - GesturePassword (2.0.2)
 
 DEPENDENCIES:
   - Eureka (from `https://github.com/xmartlabs/Eureka.git`)
   - GesturePassword
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GesturePassword
 
 EXTERNAL SOURCES:
   Eureka:
@@ -12,13 +16,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Eureka:
-    :commit: ccd078be3621434a0d7d3ab7d63deae46731ea7f
+    :commit: d803646c2eec7d874c982ccf11155bb89530f3f8
     :git: https://github.com/xmartlabs/Eureka.git
 
 SPEC CHECKSUMS:
-  Eureka: b88fb930e42c79f8c03c373d0fcdc28c1d6c50ed
-  GesturePassword: 1aa0e8bd8dabae4b4b96b6f0a544b1a617c58499
+  Eureka: 0748c7bbb2560130e43c7bfa83e99c98854a1f42
+  GesturePassword: a5c49a326e9137f12a9601af057daa81f0883479
 
 PODFILE CHECKSUM: d0de7308f6c6eac45aa98264a395d8e055d035b7
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
