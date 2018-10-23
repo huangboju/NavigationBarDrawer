@@ -10,11 +10,11 @@ extension UIView {
     func pushTransition(_ duration:CFTimeInterval = 0.4) {
         let animation = CATransition()
         animation.timingFunction = CAMediaTimingFunction(name:
-            kCAMediaTimingFunctionEaseInEaseOut)
-        animation.type = kCATransitionPush
-        animation.subtype = kCATransitionFromTop
+            CAMediaTimingFunctionName.easeInEaseOut)
+        animation.type = CATransitionType.push
+        animation.subtype = CATransitionSubtype.fromTop
         animation.duration = duration
-        layer.add(animation, forKey: kCATransitionPush)
+        layer.add(animation, forKey: CATransitionType.push.rawValue)
     }
 }
 

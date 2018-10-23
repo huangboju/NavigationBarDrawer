@@ -64,6 +64,7 @@
 		D8FB371A1D5490E40031BBF4 /* NavigationBarDrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB37191D5490E40031BBF4 /* NavigationBarDrawerTests.swift */; };
 		D8FB37251D5490E40031BBF4 /* NavigationBarDrawerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB37241D5490E40031BBF4 /* NavigationBarDrawerUITests.swift */; };
 		D8FB37331D5491E00031BBF4 /* NavigationBarDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB37321D5491E00031BBF4 /* NavigationBarDrawer.swift */; };
+		F755F26C217F21ED0047E11C /* UIAppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F755F26B217F21ED0047E11C /* UIAppearanceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,7 @@
 		D8FB37241D5490E40031BBF4 /* NavigationBarDrawerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarDrawerUITests.swift; sourceTree = "<group>"; };
 		D8FB37261D5490E40031BBF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8FB37321D5491E00031BBF4 /* NavigationBarDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarDrawer.swift; sourceTree = "<group>"; };
+		F755F26B217F21ED0047E11C /* UIAppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAppearanceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +312,7 @@
 				D8602C831D5615E30022E93D /* Bridging.h */,
 				D8FB37321D5491E00031BBF4 /* NavigationBarDrawer.swift */,
 				D8FB37041D5490E40031BBF4 /* AppDelegate.swift */,
+				F755F26B217F21ED0047E11C /* UIAppearanceController.swift */,
 				D8FB37061D5490E40031BBF4 /* ViewController.swift */,
 				D802E8901D87CCEE00036A7F /* SecondController.swift */,
 				D8FB37081D5490E40031BBF4 /* Main.storyboard */,
@@ -576,6 +579,7 @@
 				BECCE82E1F21A40000B26292 /* RecordingAnimController.swift in Sources */,
 				BECFE12B1F4E83EE002BB0A9 /* StarAnimation.swift in Sources */,
 				D802E8961D87CEF400036A7F /* ShapeController.swift in Sources */,
+				F755F26C217F21ED0047E11C /* UIAppearanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
