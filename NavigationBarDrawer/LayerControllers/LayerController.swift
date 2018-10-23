@@ -37,7 +37,7 @@ class LayerController: UIViewController, CAAnimationDelegate {
 
         view.addSubview(button)
 
-        keyframeAnimation()
+//        keyframeAnimation()
     }
 
     func keyframeAnimation() {

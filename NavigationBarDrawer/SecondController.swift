@@ -10,6 +10,7 @@ class SecondController: FormViewController {
         super.viewDidLoad()
         form +++
             creatSegueRow(with: ShapeController.self)
+            <<< creatSegueRow(with: UIAppearanceController.self)
             <<< creatSegueRow(with: TextLayerController.self)
             <<< creatSegueRow(with: TransformLayerController.self)
             <<< creatSegueRow(with: GradientLayerController.self)
