@@ -21,7 +21,7 @@ class TextLayerController: UIViewController {
 
         // set text attributes
         textLayer.foregroundColor = UIColor.black.cgColor
-        textLayer.alignmentMode = kCAAlignmentJustified
+        textLayer.alignmentMode = CATextLayerAlignmentMode.justified
         textLayer.isWrapped = true
         textLayer.contentsScale = UIScreen.main.scale
         textLayer.string = "aaaaaaaaa"

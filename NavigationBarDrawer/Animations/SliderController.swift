@@ -17,7 +17,7 @@ class SliderController: UIViewController {
         changeColor.fromValue = UIColor.orange.cgColor
         changeColor.toValue   = UIColor.blue.cgColor
         changeColor.duration  = 1.0 // For convenience
-        changeColor.fillMode = kCAFillModeForwards
+        changeColor.fillMode = CAMediaTimingFillMode.forwards
         changeColor.isRemovedOnCompletion = false
         layer.add(changeColor, forKey: "Change color")
         layer.speed = 0.0

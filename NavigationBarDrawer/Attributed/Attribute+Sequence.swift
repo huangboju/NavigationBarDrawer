@@ -12,11 +12,11 @@
  A Sequence with an iterator of (String, Any) is equivalent to [String: Any]
  This is a simple syntactic workaround since we can't write "extension Dictionary where Key == String". Thanks Swift :)
  */
-extension Sequence where Iterator.Element == (key: NSAttributedStringKey, value: Any) {
+extension Sequence where Iterator.Element == (key: NSAttributedString.Key, value: Any) {
 
     /// Returns an array of `Attribute`s converted from the dictionary of attributes. Use this whenever you want to convert [String: Any] to [Attribute].
     public var swiftyAttributes: [Attribute] {
-        return flatMap { name, value in
+        return compactMap { name, value in
             if let attrName = Attribute.Name(rawValue: name) {
                 return Attribute(name: attrName, foundationValue: value)
             } else {
@@ -30,8 +30,8 @@ extension Sequence where Iterator.Element == (key: NSAttributedStringKey, value:
 extension Sequence where Iterator.Element == Attribute {
 
     /// Returns the attribute dictionary required by Foundation's API for attributed strings. Use this whenever you need to convert [Attribute] to [String: Any].
-    public var foundationAttributes: [NSAttributedStringKey: Any] {
-        return reduce([NSAttributedStringKey: Any]()) { dictionary, attribute in
+    public var foundationAttributes: [NSAttributedString.Key: Any] {
+        return reduce([NSAttributedString.Key: Any]()) { dictionary, attribute in
             var dict = dictionary
             dict[attribute.keyName] = attribute.foundationValue
             return dict

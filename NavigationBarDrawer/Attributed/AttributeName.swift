@@ -37,8 +37,7 @@ extension Attribute {
         case verticalGlyphForm
         case writingDirection
 
-        public init?(rawValue: NSAttributedStringKey) {
-
+        public init?(rawValue: NSAttributedString.Key) {
 
             switch rawValue {
 //            case NSAttachmentAttributeName: self = .attachment
@@ -66,9 +65,9 @@ extension Attribute {
             }
         }
 
-        public var rawValue: NSAttributedStringKey {
+        public var rawValue: NSAttributedString.Key {
 
-            var type: NSAttributedStringKey
+            var type: NSAttributedString.Key
 
             // Bug in Swift prevents us from putting directives inside switch statements (https://bugs.swift.org/browse/SR-2)
 

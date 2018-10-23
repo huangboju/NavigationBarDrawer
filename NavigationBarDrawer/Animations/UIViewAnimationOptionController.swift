@@ -45,9 +45,9 @@ class UIViewAnimationOptionController: UIViewController {
         }, completion: nil)
     }
 
-    var selectedName = UIViewAnimationOptions.curveEaseInOut
+    var selectedName = UIView.AnimationOptions.curveEaseInOut
     
-    let names: [UIViewAnimationOptions] = [
+    let names: [UIView.AnimationOptions] = [
         .curveEaseInOut,
         .curveEaseIn,
         .curveEaseOut,

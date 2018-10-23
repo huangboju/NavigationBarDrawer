@@ -46,7 +46,7 @@ class TiledLayerController: UIViewController {
                 for x in 0 ..< cols {
                     if let subImage = captureView(imageView, frame: CGRect(x: CGFloat(x) * wh, y: CGFloat(y) * wh, width: wh, height: wh)) {
                         let path = "\(filePath)/初雪-\(x)-\(y).png"
-                        try? UIImagePNGRepresentation(subImage)?.write(to: URL(fileURLWithPath: path), options: [.atomic])
+                        try? subImage.pngData()?.write(to: URL(fileURLWithPath: path), options: [.atomic])
                     }
                 }
             }

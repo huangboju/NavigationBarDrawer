@@ -11,50 +11,50 @@ class ViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var options = LockOptions()
-        options.passwordKeySuffix = "xiAo_Ju"
-        options.arcLineWidth = 1
-        form +++ Section("手势密码")
-            <<< ButtonRow("设置密码") {
-                $0.title = $0.tag
-                $0.onCellSelection({ _, _ in
-                    if !LockManager.hasPassword() {
-
-                    } else {
-                        LockManager.showSettingLockController(in: self, success: { _ in
-
-                        })
-                    }
-                })
-            }
-            <<< ButtonRow("验证密码") {
-                $0.title = $0.tag
-                $0.onCellSelection({ _, _ in
-                    if !LockManager.hasPassword() {
-
-                    } else {
-                        LockManager.showVerifyLockController(in: self, success: { _ in
-                            print("success")
-                        }, forget: { _ in
-                            print("forget")
-                        }, overrunTimes: { _ in
-                            print("overrunTimes")
-                        })
-                    }
-                })
-            }
-            <<< ButtonRow("修改密码") {
-                $0.title = $0.tag
-                $0.onCellSelection({ _, _ in
-                    if !LockManager.hasPassword() {
-
-                    } else {
-                        LockManager.showModifyLockController(in: self, success: { _ in
-                            print("修改成功")
-                        })
-                    }
-                })
-            }
+//        var options = LockOptions()
+//        options.passwordKeySuffix = "xiAo_Ju"
+//        options.arcLineWidth = 1
+//        form +++ Section("手势密码")
+//            <<< ButtonRow("设置密码") {
+//                $0.title = $0.tag
+//                $0.onCellSelection({ _, _ in
+//                    if !LockManager.hasPassword() {
+//
+//                    } else {
+//                        LockManager.showSettingLockController(in: self, success: { _ in
+//
+//                        })
+//                    }
+//                })
+//            }
+//            <<< ButtonRow("验证密码") {
+//                $0.title = $0.tag
+//                $0.onCellSelection({ _, _ in
+//                    if !LockManager.hasPassword() {
+//
+//                    } else {
+//                        LockManager.showVerifyLockController(in: self, success: { _ in
+//                            print("success")
+//                        }, forget: { _ in
+//                            print("forget")
+//                        }, overrunTimes: { _ in
+//                            print("overrunTimes")
+//                        })
+//                    }
+//                })
+//            }
+//            <<< ButtonRow("修改密码") {
+//                $0.title = $0.tag
+//                $0.onCellSelection({ _, _ in
+//                    if !LockManager.hasPassword() {
+//
+//                    } else {
+//                        LockManager.showModifyLockController(in: self, success: { _ in
+//                            print("修改成功")
+//                        })
+//                    }
+//                })
+//            }
 
         navigationBarDrawer()
     }

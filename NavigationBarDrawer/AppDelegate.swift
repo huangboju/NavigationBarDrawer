@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions _: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         window?.backgroundColor = .white
         return true
@@ -79,15 +79,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // 任意界面摇一摇
 extension UIWindow {
 
-    open override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
+    open override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         print(#function)
     }
 
-    open override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+    open override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         print(#function)
     }
 
-    open override func motionCancelled(_ motion: UIEventSubtype, with event: UIEvent?) {
+    open override func motionCancelled(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         print(#function)
     }
 }

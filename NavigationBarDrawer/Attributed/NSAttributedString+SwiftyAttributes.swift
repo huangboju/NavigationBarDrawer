@@ -8,8 +8,8 @@
 
 import Foundation
 
-func dictionary(from attributes: [Attribute]) -> [NSAttributedStringKey: Any] {
-    var dict = [NSAttributedStringKey: Any]()
+func dictionary(from attributes: [Attribute]) -> [NSAttributedString.Key: Any] {
+    var dict = [NSAttributedString.Key: Any]()
     for attr in attributes {
         dict[attr.keyName] = attr.foundationValue
     }

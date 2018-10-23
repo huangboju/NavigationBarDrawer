@@ -28,7 +28,7 @@ class RecordingAnimController: UIViewController {
         view.addSubview(slider)
 
         
-        displayLink.add(to: RunLoop.main, forMode: .commonModes)
+        displayLink.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
     }
 
     override func viewDidDisappear(_ animated: Bool) {

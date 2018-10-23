@@ -40,14 +40,14 @@ class CAMediaTimingFunctionController: UIViewController {
         drawTimeFution()
     }
     
-    var selectedName = kCAMediaTimingFunctionLinear
+    var selectedName = CAMediaTimingFunctionName.linear
 
     let names = [
-        kCAMediaTimingFunctionLinear,
-        kCAMediaTimingFunctionEaseIn,
-        kCAMediaTimingFunctionEaseOut,
-        kCAMediaTimingFunctionEaseInEaseOut,
-        kCAMediaTimingFunctionDefault
+        CAMediaTimingFunctionName.linear,
+        CAMediaTimingFunctionName.easeIn,
+        CAMediaTimingFunctionName.easeOut,
+        CAMediaTimingFunctionName.easeInEaseOut,
+        CAMediaTimingFunctionName.default
     ]
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -82,6 +82,7 @@ class CAMediaTimingFunctionController: UIViewController {
         path.apply(CGAffineTransform(scaleX: 200, y: 200))
         //create shape layer
         let shapeLayer = CAShapeLayer()
+        shapeLayer.frame.origin = CGPoint(x: 50, y: 100)
         shapeLayer.strokeColor = UIColor.red.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = 4.0
@@ -94,7 +95,7 @@ class CAMediaTimingFunctionController: UIViewController {
         selectedName = names[segmentView.selectedSegmentIndex]
         drawTimeFution()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

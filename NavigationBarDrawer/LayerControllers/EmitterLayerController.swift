@@ -12,7 +12,7 @@ class EmitterLayerController: UIViewController {
         view.layer.addSublayer(emitter)
 
         // configure emitter
-        emitter.renderMode = kCAEmitterLayerAdditive
+        emitter.renderMode = CAEmitterLayerRenderMode.additive
         emitter.emitterPosition = CGPoint(x: emitter.frame.width / 2.0, y: emitter.frame.height / 2.0)
 
         // create a particle template
@@ -24,7 +24,7 @@ class EmitterLayerController: UIViewController {
         cell.alphaSpeed = -0.4
         cell.velocity = 50
         cell.velocityRange = 50
-        cell.emissionRange = CGFloat(M_PI) * 2.0
+        cell.emissionRange = CGFloat.pi * 2.0
 
         // add particle template to emitter
         emitter.emitterCells = [cell]

@@ -44,7 +44,7 @@ class AnimationGroupController: UIViewController {
         // create the position animation
         let animation1 = CAKeyframeAnimation(keyPath: "position")
         animation1.path = bezierPath.cgPath
-        animation1.rotationMode = kCAAnimationRotateAuto
+        animation1.rotationMode = CAAnimationRotationMode.rotateAuto
 
         // create the color animation
         let animation2 = CABasicAnimation(keyPath: "backgroundColor")

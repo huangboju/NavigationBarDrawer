@@ -28,6 +28,7 @@ class TimingFunctionController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
 
+
         view.layer.addSublayer(colorLayer)
         view.addSubview(colorView)
         view.addSubview(button)
@@ -50,7 +51,7 @@ class TimingFunctionController: UIViewController {
         ]
         // add timing function
 
-        let fn = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+        let fn = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
         animation.timingFunctions = [fn, fn, fn]
         // apply animation to layer
         colorLayer.add(animation, forKey: nil)

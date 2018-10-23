@@ -31,8 +31,8 @@ class LayerController: UIViewController, CAAnimationDelegate {
         view.layer.addSublayer(colorLayer)
 
         let transition = CATransition()
-        transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromLeft
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromLeft
         colorLayer.actions = ["backgroundColor": transition]
 
         view.addSubview(button)

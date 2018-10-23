@@ -14,7 +14,7 @@ class MediaTimingFunctionController: UIViewController {
         view.backgroundColor = UIColor.white
 
         // create timing function
-        let function = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        let function = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
 
         var controlPoint1: [Float] = [0, 0]
         var controlPoint2: [Float] = [0, 0]

@@ -36,7 +36,7 @@ class ContentsRectController: UIViewController {
     func addSpriteImage(_ image: UIImage?, withContentRect rect: CGRect,  toLayer: CALayer) {
         toLayer.contents = image?.cgImage
         //scale contents to fit
-        toLayer.contentsGravity = kCAGravityResizeAspect
+        toLayer.contentsGravity = CALayerContentsGravity.resizeAspect
         //set contentsRect
         toLayer.contentsRect = rect
     }

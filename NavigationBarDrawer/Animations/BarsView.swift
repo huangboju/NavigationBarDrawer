@@ -150,7 +150,7 @@ open class BarsView: UIView {
         group.delegate = self
         group.duration = self.animationTime
         group.repeatCount = 1
-        group.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        group.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         group.animations = [sizeAnimation, animation]
         group.isRemovedOnCompletion = true
         return group

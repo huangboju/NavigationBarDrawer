@@ -43,8 +43,8 @@ class DrawingView: UIView {
         backgroundColor = UIColor.lightGray
         shapeLayer?.strokeColor = UIColor.red.cgColor
         shapeLayer?.fillColor = UIColor.clear.cgColor
-        shapeLayer?.lineJoin = kCALineJoinRound
-        shapeLayer?.lineCap = kCALineCapRound
+        shapeLayer?.lineJoin = CAShapeLayerLineJoin.round
+        shapeLayer?.lineCap = CAShapeLayerLineCap.round
         shapeLayer?.lineWidth = 5
     }
 

@@ -75,7 +75,7 @@ class StarAnimation: UIViewController {
         let groupAnimation = CAAnimationGroup()
         groupAnimation.animations = [animation, animation1]
         groupAnimation.duration = 5
-        groupAnimation.fillMode = kCAFillModeForwards
+        groupAnimation.fillMode = CAMediaTimingFillMode.forwards
         // 添加动画 
         imageView.layer.add(groupAnimation, forKey: "scale-layer")
     }

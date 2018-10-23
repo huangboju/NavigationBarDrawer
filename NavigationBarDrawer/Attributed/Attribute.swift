@@ -112,22 +112,22 @@ public enum Attribute {
         case .strokeColor: ret = .strokeColor(validate(foundationValue))
         case .strokeWidth: ret = .strokeWidth(validateDouble(foundationValue))
         case .strikethroughColor: ret = .strikethroughColor(validate(foundationValue))
-        case .strikethroughStyle: ret = .strikethroughStyle(StrikethroughStyle(rawValue: validate(foundationValue))!)
+        case .strikethroughStyle: ret = .strikethroughStyle(StrikethroughStyle(rawValue: validate(foundationValue)))
         case .textColor: ret = .textColor(validate(foundationValue))
         case .textEffect: ret = .textEffect(TextEffect(rawValue: validate(foundationValue))!)
         case .underlineColor: ret = .underlineColor(validate(foundationValue))
-        case .underlineStyle: ret = .underlineStyle(UnderlineStyle(rawValue: validate(foundationValue))!)
+        case .underlineStyle: ret = .underlineStyle(UnderlineStyle(rawValue: validate(foundationValue)))
         case .verticalGlyphForm: ret = .verticalGlyphForm(VerticalGlyphForm(rawValue: validate(foundationValue))!)
         case .writingDirection:
             let values: [Int] = validate(foundationValue)
-            ret = .writingDirections(values.flatMap(WritingDirection.init))
+            ret = .writingDirections(values.compactMap(WritingDirection.init))
         }
 
         self = ret
     }
 
     /// The key name corresponding to the attribute.
-    public var keyName: NSAttributedStringKey {
+    public var keyName: NSAttributedString.Key {
 
         var name: Attribute.Name!
 

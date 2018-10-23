@@ -8,14 +8,14 @@ import Eureka
 
 open class SegueCellOf<T: Equatable>: Cell<T>, CellType {
 
-    public required init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    public required init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
     public required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     open override func update() {
         super.update()
         selectionStyle = row.isDisabled ? .none : .default

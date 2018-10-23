@@ -66,8 +66,8 @@ class PullToRefreshAnimation: UIViewController, UICollectionViewDataSource, UICo
         for shape in [loadShape, ingShape] {
             shape.strokeColor = UIColor.black.cgColor
             shape.fillColor   = UIColor.clear.cgColor
-            shape.lineCap   = kCALineCapRound
-            shape.lineJoin  = kCALineJoinRound
+            shape.lineCap   = CAShapeLayerLineCap.round
+            shape.lineJoin  = CAShapeLayerLineJoin.round
             shape.lineWidth = 5.0
             shape.position = CGPoint(x: 75, y: 0)
             shape.strokeEnd = 0
@@ -108,7 +108,7 @@ class PullToRefreshAnimation: UIViewController, UICollectionViewDataSource, UICo
         let write2 = CABasicAnimation(keyPath: "strokeEnd")
         write2.fromValue = 0
         write2.toValue   = 1
-        write2.fillMode = kCAFillModeBoth
+        write2.fillMode = CAMediaTimingFillMode.both
         write2.isRemovedOnCompletion = false
         write2.duration = 0.4
         return write2
