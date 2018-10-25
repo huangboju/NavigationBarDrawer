@@ -65,6 +65,9 @@
 		D8FB37251D5490E40031BBF4 /* NavigationBarDrawerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB37241D5490E40031BBF4 /* NavigationBarDrawerUITests.swift */; };
 		D8FB37331D5491E00031BBF4 /* NavigationBarDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB37321D5491E00031BBF4 /* NavigationBarDrawer.swift */; };
 		F755F26C217F21ED0047E11C /* UIAppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F755F26B217F21ED0047E11C /* UIAppearanceController.swift */; };
+		F755F2742181A49E0047E11C /* BulbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F755F2732181A49E0047E11C /* BulbLayer.swift */; };
+		F755F2762181A68D0047E11C /* BulbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F755F2752181A68D0047E11C /* BulbView.swift */; };
+		F755F27A2181C37F0047E11C /* CustomAnimatablePropertyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F755F2792181C37F0047E11C /* CustomAnimatablePropertyVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +155,9 @@
 		D8FB37261D5490E40031BBF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8FB37321D5491E00031BBF4 /* NavigationBarDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarDrawer.swift; sourceTree = "<group>"; };
 		F755F26B217F21ED0047E11C /* UIAppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAppearanceController.swift; sourceTree = "<group>"; };
+		F755F2732181A49E0047E11C /* BulbLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulbLayer.swift; sourceTree = "<group>"; };
+		F755F2752181A68D0047E11C /* BulbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulbView.swift; sourceTree = "<group>"; };
+		F755F2792181C37F0047E11C /* CustomAnimatablePropertyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimatablePropertyVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +309,7 @@
 		D8FB37031D5490E40031BBF4 /* NavigationBarDrawer */ = {
 			isa = PBXGroup;
 			children = (
+				F755F2722181A4410047E11C /* CustomAnimatableProperty */,
 				BEB6352C1FA75E1C00525EBB /* Attributed */,
 				D817F2561D8C2C0700E50F91 /* Animations */,
 				D8C6F8C81D89229A00F3A7AA /* Resources */,
@@ -348,6 +355,16 @@
 				720ED2B646381CFE6771FF79 /* Pods_NavigationBarDrawer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F755F2722181A4410047E11C /* CustomAnimatableProperty */ = {
+			isa = PBXGroup;
+			children = (
+				F755F2732181A49E0047E11C /* BulbLayer.swift */,
+				F755F2752181A68D0047E11C /* BulbView.swift */,
+				F755F2792181C37F0047E11C /* CustomAnimatablePropertyVC.swift */,
+			);
+			path = CustomAnimatableProperty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,6 +550,7 @@
 				BE697ABD200F3759009C6762 /* ViewWithPersistentAnimations.swift in Sources */,
 				BEB635401FA75E1C00525EBB /* VerticalGlyphForm.swift in Sources */,
 				D817F2581D8C2C3700E50F91 /* AnimationGroupController.swift in Sources */,
+				F755F2762181A68D0047E11C /* BulbView.swift in Sources */,
 				D8FB37071D5490E40031BBF4 /* ViewController.swift in Sources */,
 				D8C6F8941D88EAA300F3A7AA /* GradientLayerController.swift in Sources */,
 				D8C6F8CC1D89262C00F3A7AA /* EmitterLayerController.swift in Sources */,
@@ -549,6 +567,7 @@
 				D802E8911D87CCEE00036A7F /* SecondController.swift in Sources */,
 				BE8FB9E41F43E39F00D5E67D /* TipViewController.swift in Sources */,
 				BEB635381FA75E1C00525EBB /* TextEffect.swift in Sources */,
+				F755F2742181A49E0047E11C /* BulbLayer.swift in Sources */,
 				BEB6353F1FA75E1C00525EBB /* Ligatures.swift in Sources */,
 				BEDB1AEF2004678A00BFDF0B /* PresentationLayerController.swift in Sources */,
 				D8C6F8981D88FA3100F3A7AA /* ReplicatorLayerController.swift in Sources */,
@@ -567,6 +586,7 @@
 				BEB635421FA75E1C00525EBB /* Attribute.swift in Sources */,
 				BEB6353B1FA75E1C00525EBB /* Operators.swift in Sources */,
 				BE1AB8C41F185F5D00A83809 /* SliderController.swift in Sources */,
+				F755F27A2181C37F0047E11C /* CustomAnimatablePropertyVC.swift in Sources */,
 				D86AAA1F1EB184DE001B1398 /* UIViewAnimationOptionController.swift in Sources */,
 				BE1AB8CB1F18837500A83809 /* CustomCell.swift in Sources */,
 				BEB635411FA75E1C00525EBB /* WritingDirection.swift in Sources */,
