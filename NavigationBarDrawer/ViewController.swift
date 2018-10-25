@@ -11,50 +11,25 @@ class ViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        var options = LockOptions()
-//        options.passwordKeySuffix = "xiAo_Ju"
-//        options.arcLineWidth = 1
-//        form +++ Section("手势密码")
-//            <<< ButtonRow("设置密码") {
-//                $0.title = $0.tag
-//                $0.onCellSelection({ _, _ in
-//                    if !LockManager.hasPassword() {
-//
-//                    } else {
-//                        LockManager.showSettingLockController(in: self, success: { _ in
-//
-//                        })
-//                    }
-//                })
-//            }
-//            <<< ButtonRow("验证密码") {
-//                $0.title = $0.tag
-//                $0.onCellSelection({ _, _ in
-//                    if !LockManager.hasPassword() {
-//
-//                    } else {
-//                        LockManager.showVerifyLockController(in: self, success: { _ in
-//                            print("success")
-//                        }, forget: { _ in
-//                            print("forget")
-//                        }, overrunTimes: { _ in
-//                            print("overrunTimes")
-//                        })
-//                    }
-//                })
-//            }
-//            <<< ButtonRow("修改密码") {
-//                $0.title = $0.tag
-//                $0.onCellSelection({ _, _ in
-//                    if !LockManager.hasPassword() {
-//
-//                    } else {
-//                        LockManager.showModifyLockController(in: self, success: { _ in
-//                            print("修改成功")
-//                        })
-//                    }
-//                })
-//            }
+        form +++ Section("手势密码")
+            <<< ButtonRow("设置密码") {
+                $0.title = $0.tag
+                $0.onCellSelection({ _, _ in
+                   
+                })
+            }
+            <<< ButtonRow("验证密码") {
+                $0.title = $0.tag
+                $0.onCellSelection({ _, _ in
+                    
+                })
+            }
+            <<< ButtonRow("修改密码") {
+                $0.title = $0.tag
+                $0.onCellSelection({ _, _ in
+                    
+                })
+            }
 
         navigationBarDrawer()
     }
@@ -65,8 +40,8 @@ class ViewController: FormViewController {
         drawer = NavigationBarDrawer()
         drawer?.scrollView = tableView
         drawer?.objects = [s]
-//        let systemItems: [UIBarButtonSystemItem] = [.add, .flexibleSpace, .trash, .flexibleSpace, .add]
-        //        drawer?.items = systemItems.map{ UIBarButtonItem(barButtonSystemItem: $0, target: self, action: #selector(action)) }
+//        let systemItems: [UIBarButtonItem.SystemItem] = [.add, .flexibleSpace, .trash, .flexibleSpace, .add]
+//                drawer?.items = systemItems.map{ UIBarButtonItem(barButtonSystemItem: $0, target: self, action: #selector(action)) }
         navigationItem.rightBarButtonItem = editButtonItem
         let leftBarButton = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(leftAction))
         navigationItem.leftBarButtonItem = leftBarButton
