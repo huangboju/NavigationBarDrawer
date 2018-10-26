@@ -8,6 +8,8 @@
 
 import UIKit
 
+// https://blog.csdn.net/sinat_27706697/article/details/49738957
+
 // Set Animation Trigger to 1 for explicit animations, 0 for implict animations.
 let ANIMATION_TRIGGER_EXPLICIT = true
 
