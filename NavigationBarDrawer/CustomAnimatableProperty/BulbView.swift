@@ -11,7 +11,6 @@ import UIKit
 class BulbView: UIView {
     var red: CGFloat = 0.0, green: CGFloat = 0.0, blue: CGFloat = 0
     var on = false
-    var offscreenContext: CGContext?
     var currentContext: CGContext?
     var image: UIImage?
     var color = UIColor.red {
@@ -125,6 +124,8 @@ class BulbView: UIView {
         // Get the current state of the bulb's "brightness"
         // Core Animation is animating this value on our behalf.
         let brightness = (layer as? BulbLayer)?.brightness ?? 0
+        
+        print(brightness)
 
         // Calculate the bulbs current color (via RGB components) based on
         // the bulb's current "brightness".
@@ -135,8 +136,10 @@ class BulbView: UIView {
         let curGreen = green + greenDiff * (brightness / 255.0)
         let curBlue = blue + blueDiff * (brightness / 255.0)
         
+        
+        
         // Start an offscreen graphics context
-        UIGraphicsBeginImageContextWithOptions(self.image?.size ?? .zero, true, 1.0)
+        UIGraphicsBeginImageContextWithOptions(self.image!.size, true, 1.0)
         currentContext = UIGraphicsGetCurrentContext()
 
         let imageRect = currentContext?.boundingBoxOfClipPath ?? .zero

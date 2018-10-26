@@ -9,7 +9,7 @@
 import UIKit
 
 class BulbLayer: CALayer {
-    var brightness: CGFloat = 0
+    @objc var brightness: CGFloat = 0
     
     override init() {
         super.init()
@@ -21,7 +21,6 @@ class BulbLayer: CALayer {
     }
     
     override class func needsDisplay(forKey key: String) -> Bool {
-        print(key)
         if key == "brightness" {
             return true
         }
