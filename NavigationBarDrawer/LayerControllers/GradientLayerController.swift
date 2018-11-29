@@ -6,7 +6,7 @@ class GradientLayerController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor(white: 0, alpha: 1)
         // create gradient layer and add it to our container view
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = CGRect(x: 50, y: 100, width: 200, height: 200)
@@ -32,6 +32,27 @@ class GradientLayerController: UIViewController {
         view.addSubview(button)
 
         generateButton()
+        
+        gradient()
+    }
+    
+    func gradient() {
+        // create gradient layer and add it to our container view
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = CGRect(x: 0, y: 500, width: view.frame.width, height: 20)
+        view.layer.addSublayer(gradientLayer)
+        
+        // set gradient colors
+        
+        gradientLayer.colors = [
+            UIColor(white: 1, alpha: 0.8).cgColor,
+            UIColor(white: 1, alpha: 1).cgColor
+        ]
+
+        gradientLayer.locations = [0.25, 0.75]
+        // set gradient start and end points
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
     }
 
     func generateButton() {
