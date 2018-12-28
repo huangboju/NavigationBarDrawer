@@ -64,6 +64,8 @@
 		D8FB371A1D5490E40031BBF4 /* NavigationBarDrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB37191D5490E40031BBF4 /* NavigationBarDrawerTests.swift */; };
 		D8FB37251D5490E40031BBF4 /* NavigationBarDrawerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB37241D5490E40031BBF4 /* NavigationBarDrawerUITests.swift */; };
 		D8FB37331D5491E00031BBF4 /* NavigationBarDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB37321D5491E00031BBF4 /* NavigationBarDrawer.swift */; };
+		F740199A21D61F09003E4ABA /* SearchIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F740199921D61F09003E4ABA /* SearchIntroViewController.swift */; };
+		F740199C21D63E5E003E4ABA /* RBBAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F740199B21D63E5E003E4ABA /* RBBAnimation.swift */; };
 		F755F26C217F21ED0047E11C /* UIAppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F755F26B217F21ED0047E11C /* UIAppearanceController.swift */; };
 		F755F2742181A49E0047E11C /* BulbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F755F2732181A49E0047E11C /* BulbLayer.swift */; };
 		F755F2762181A68D0047E11C /* BulbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F755F2752181A68D0047E11C /* BulbView.swift */; };
@@ -154,6 +156,8 @@
 		D8FB37241D5490E40031BBF4 /* NavigationBarDrawerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarDrawerUITests.swift; sourceTree = "<group>"; };
 		D8FB37261D5490E40031BBF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8FB37321D5491E00031BBF4 /* NavigationBarDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarDrawer.swift; sourceTree = "<group>"; };
+		F740199921D61F09003E4ABA /* SearchIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIntroViewController.swift; sourceTree = "<group>"; };
+		F740199B21D63E5E003E4ABA /* RBBAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBBAnimation.swift; sourceTree = "<group>"; };
 		F755F26B217F21ED0047E11C /* UIAppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAppearanceController.swift; sourceTree = "<group>"; };
 		F755F2732181A49E0047E11C /* BulbLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulbLayer.swift; sourceTree = "<group>"; };
 		F755F2752181A68D0047E11C /* BulbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulbView.swift; sourceTree = "<group>"; };
@@ -271,6 +275,8 @@
 				BECCE82D1F21A40000B26292 /* RecordingAnimController.swift */,
 				BE8FB9E31F43E39F00D5E67D /* TipViewController.swift */,
 				BE1EAAB82005B7B2001A17F9 /* TimeOffsetController.swift */,
+				F740199921D61F09003E4ABA /* SearchIntroViewController.swift */,
+				F740199B21D63E5E003E4ABA /* RBBAnimation.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -573,6 +579,7 @@
 				D8C6F8981D88FA3100F3A7AA /* ReplicatorLayerController.swift in Sources */,
 				BEB635391FA75E1C00525EBB /* NSAttributedString+SwiftyAttributes.swift in Sources */,
 				BEB6353A1FA75E1C00525EBB /* NSMutableAttributedString+SwiftyAttributes.swift in Sources */,
+				F740199A21D61F09003E4ABA /* SearchIntroViewController.swift in Sources */,
 				D817F2621D8E44E800E50F91 /* BallController.swift in Sources */,
 				BEB6353C1FA75E1C00525EBB /* AttributeName.swift in Sources */,
 				D8C6F8901D88E10100F3A7AA /* TextLayerController.swift in Sources */,
@@ -588,6 +595,7 @@
 				BE1AB8C41F185F5D00A83809 /* SliderController.swift in Sources */,
 				F755F27A2181C37F0047E11C /* CustomAnimatablePropertyVC.swift in Sources */,
 				D86AAA1F1EB184DE001B1398 /* UIViewAnimationOptionController.swift in Sources */,
+				F740199C21D63E5E003E4ABA /* RBBAnimation.swift in Sources */,
 				BE1AB8CB1F18837500A83809 /* CustomCell.swift in Sources */,
 				BEB635411FA75E1C00525EBB /* WritingDirection.swift in Sources */,
 				D817F25A1D8C2F6600E50F91 /* TransitionController.swift in Sources */,

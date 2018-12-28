@@ -39,7 +39,8 @@ class SecondController: FormViewController {
             <<< creatSegueRow(with: RecordingAnimController.self)
             <<< creatSegueRow(with: TipViewController.self)
             <<< creatSegueRow(with: StarAnimation.self)
-            <<< creatSegueRow(with: CustomAnimatablePropertyVC.self)   
+            <<< creatSegueRow(with: CustomAnimatablePropertyVC.self)
+            <<< creatSegueRow(with: SearchIntroViewController.self)
     }
 
     func creatSegueRow(with dest: UIViewController.Type) -> SegueRow {
