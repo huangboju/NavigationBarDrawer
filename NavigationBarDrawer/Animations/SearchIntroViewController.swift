@@ -52,23 +52,42 @@ class SearchIntroLayer: CALayer {
     }
     
     func startAnimation() {
-        let animation = CABasicAnimation(keyPath: "position.y")
+
+        let movingAni = CABasicAnimation(keyPath: "position.y")
         let y = position.y
-        animation.fromValue = y
-        animation.toValue = y - 10
+        movingAni.fromValue = y
+        movingAni.toValue = y - 10
         let duration = 0.4
-        animation.duration = duration
-        animation.repeatCount = ceil(Float(3.0 / duration))
-        animation.autoreverses = true
-        add(animation, forKey: "animation")
+        movingAni.duration = duration
+        movingAni.repeatCount = ceil(Float(3.0 / duration))
+        movingAni.autoreverses = true
+        
+        let fadeOut = CABasicAnimation(keyPath: "opacity")
+        fadeOut.beginTime = 3.5
+        fadeOut.duration = 0.25
+        fadeOut.fromValue = 1
+        fadeOut.toValue = 0
+        fadeOut.fillMode = CAMediaTimingFillMode.both
+        
+        let aniGroup = CAAnimationGroup()
+        aniGroup.duration = 4
+        aniGroup.delegate = self
+        aniGroup.animations = [movingAni, fadeOut]
+
+        add(aniGroup, forKey: "opacityOUT")
     }
     
     override init(layer: Any) {
         super.init(layer: layer)
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+extension SearchIntroLayer: CAAnimationDelegate {
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+
     }
 }
