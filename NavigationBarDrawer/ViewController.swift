@@ -4,12 +4,22 @@
 
 import Eureka
 import GesturePassword
+import Network
 
 class ViewController: FormViewController {
     var drawer: NavigationBarDrawer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if #available(iOS 12.0, *) {
+            let monitor = NWPathMonitor()
+            monitor.pathUpdateHandler = {
+                print($0)
+            }
+        } else {
+            
+        }
 
         form +++ Section("手势密码")
             <<< ButtonRow("设置密码") {
