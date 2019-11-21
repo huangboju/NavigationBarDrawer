@@ -34,7 +34,7 @@ class TransitionController: UIViewController {
     func change() {
         UIView.transition(with: imageView, duration: 1, options: .transitionFlipFromLeft, animations: {
             let currentImage = self.imageView.image
-            var index = self.images.index { $0 == currentImage }
+            var index = self.images.firstIndex { $0 == currentImage }
             print(index ?? (Any).self)
             index = (index! + 1) % self.images.count
             self.imageView.image = self.images[index!]

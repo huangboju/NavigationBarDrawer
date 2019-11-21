@@ -33,7 +33,7 @@ class MainTabBar: UITabBarController, UITabBarControllerDelegate {
     }
 
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        if let index = tabBar.items?.index(of: item), indexFlag != index {
+        if let index = tabBar.items?.firstIndex(of: item), indexFlag != index {
             animationWithIndex(index: index)
         }
     }

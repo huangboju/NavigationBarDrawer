@@ -438,29 +438,29 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = xiAo_Ju;
 				TargetAttributes = {
 					D8FB37001D5490E40031BBF4 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 3NFVM7S86S;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1110;
 					};
 					D8FB37141D5490E40031BBF4 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1110;
 						TestTargetID = D8FB37001D5490E40031BBF4;
 					};
 					D8FB371F1D5490E40031BBF4 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1110;
 						TestTargetID = D8FB37001D5490E40031BBF4;
 					};
 				};
 			};
 			buildConfigurationList = D8FB36FC1D5490E40031BBF4 /* Build configuration list for PBXProject "NavigationBarDrawer" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -783,7 +783,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = NavigationBarDrawer/Bridging.h;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -802,7 +802,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = NavigationBarDrawer/Bridging.h;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -815,7 +815,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NavigationBarDrawer.NavigationBarDrawerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavigationBarDrawer.app/NavigationBarDrawer";
 			};
 			name = Debug;
@@ -829,7 +829,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NavigationBarDrawer.NavigationBarDrawerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavigationBarDrawer.app/NavigationBarDrawer";
 			};
 			name = Release;
@@ -842,7 +842,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NavigationBarDrawer.NavigationBarDrawerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = NavigationBarDrawer;
 			};
 			name = Debug;
@@ -855,7 +855,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NavigationBarDrawer.NavigationBarDrawerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = NavigationBarDrawer;
 			};
 			name = Release;
